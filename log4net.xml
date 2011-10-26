@@ -1,5 +1,8 @@
-<TemplatesExport family="Live Templates">
+<TemplatesExport>
   <Template uid="63fd793d-1404-4906-8709-51b20f5a4393" shortcut="log4net-logger" description="" text="private static readonly log4net.ILog Logger = log4net.LogManager.GetLogger(typeof($CLASS$));" reformat="True" shortenQualifiedReferences="True">
+    <Context>
+      <CSharpContext context="Everywhere" minimumLanguageVersion="2.0" />
+    </Context>
     <Categories />
     <Variables>
       <Variable name="CLASS" expression="typeName()" initialRange="0" />
