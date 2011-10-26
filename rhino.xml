@@ -1,16 +1,5 @@
 <TemplatesExport>
-  <Template uid="ad62f479-454d-497c-b050-0c7c02986564" shortcut="rhino-stub-framework" description="" text="// arrange&#xD;&#xA;&#xD;&#xA;var mocks = new Rhino.Mocks.MockRepository();&#xD;&#xA;var $STUB_NAME$ = mocks.Stub&lt;$STUB_TYPE$&gt;();&#xD;&#xA;&#xD;&#xA;using (mocks.Record())&#xD;&#xA;{&#xD;&#xA;	// set results - if needed&#xD;&#xA;	$END$&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;using (mocks.Playback())&#xD;&#xA;{&#xD;&#xA;	// act&#xD;&#xA;	// assert&#xD;&#xA;	// remember that expectations are evaluated on playback dispose&#xD;&#xA;}" reformat="True" shortenQualifiedReferences="True">
-    <Context>
-      <CSharpContext context="Everywhere" minimumLanguageVersion="2.0" />
-    </Context>
-    <Categories />
-    <Variables>
-      <Variable name="STUB_NAME" expression="" initialRange="0" />
-      <Variable name="STUB_TYPE" expression="" initialRange="0" />
-    </Variables>
-    <CustomProperties />
-  </Template>
-  <Template uid="f14c9b9e-5822-4188-b953-ae7f66d96e7c" shortcut="rhino-strict-framework" description="" text="// arrange&#xD;&#xA;&#xD;&#xA;var mocks = new Rhino.Mocks.MockRepository();&#xD;&#xA;var $MOCK_NAME$ = mocks.CreateMock&lt;$MOCK_TYPE$&gt;();&#xD;&#xA;&#xD;&#xA;using (mocks.Record())&#xD;&#xA;{&#xD;&#xA;	// set expectations&#xD;&#xA;	$END$&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;using (mocks.Playback())&#xD;&#xA;{&#xD;&#xA;	// act&#xD;&#xA;	// assert&#xD;&#xA;	// remember that expectations are evaluated on playback dispose&#xD;&#xA;}" reformat="True" shortenQualifiedReferences="True">
+  <Template uid="efa67571-01c4-4d8b-a3e2-5b388f58cf77" shortcut="rhino-dynamic-framework" description="" text="// arrange&#xD;&#xA;&#xD;&#xA;var mocks = new Rhino.Mocks.MockRepository();&#xD;&#xA;var $MOCK_NAME$ = mocks.DynamicMock&lt;$MOCK_TYPE$&gt;();&#xD;&#xA;&#xD;&#xA;using (mocks.Record())&#xD;&#xA;{&#xD;&#xA;	// set results&#xD;&#xA;	$END$&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;using (mocks.Playback())&#xD;&#xA;{&#xD;&#xA;	// act&#xD;&#xA;	// assert&#xD;&#xA;	// remember that expectations are evaluated on playback dispose&#xD;&#xA;}" reformat="True" shortenQualifiedReferences="True">
     <Context>
       <CSharpContext context="Everywhere" minimumLanguageVersion="2.0" />
     </Context>
@@ -21,7 +10,18 @@
     </Variables>
     <CustomProperties />
   </Template>
-  <Template uid="efa67571-01c4-4d8b-a3e2-5b388f58cf77" shortcut="rhino-dynamic-framework" description="" text="// arrange&#xD;&#xA;&#xD;&#xA;var mocks = new Rhino.Mocks.MockRepository();&#xD;&#xA;var $MOCK_NAME$ = mocks.DynamicMock&lt;$MOCK_TYPE$&gt;();&#xD;&#xA;&#xD;&#xA;using (mocks.Record())&#xD;&#xA;{&#xD;&#xA;	// set results&#xD;&#xA;	$END$&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;using (mocks.Playback())&#xD;&#xA;{&#xD;&#xA;	// act&#xD;&#xA;	// assert&#xD;&#xA;	// remember that expectations are evaluated on playback dispose&#xD;&#xA;}" reformat="True" shortenQualifiedReferences="True">
+  <Template uid="ad62f479-454d-497c-b050-0c7c02986564" shortcut="rhino-stub-framework" description="" text="// arrange&#xD;&#xA;&#xD;&#xA;var mocks = new Rhino.Mocks.MockRepository();&#xD;&#xA;var $STUB_NAME$ = mocks.Stub&lt;$STUB_TYPE$&gt;();&#xD;&#xA;&#xD;&#xA;// act&#xD;&#xA;// assert" reformat="True" shortenQualifiedReferences="True">
+    <Context>
+      <CSharpContext context="Everywhere" minimumLanguageVersion="2.0" />
+    </Context>
+    <Categories />
+    <Variables>
+      <Variable name="STUB_NAME" expression="" initialRange="0" />
+      <Variable name="STUB_TYPE" expression="" initialRange="0" />
+    </Variables>
+    <CustomProperties />
+  </Template>
+  <Template uid="f14c9b9e-5822-4188-b953-ae7f66d96e7c" shortcut="rhino-strict-record-playback" description="" text="// arrange&#xD;&#xA;&#xD;&#xA;var mocks = new Rhino.Mocks.MockRepository();&#xD;&#xA;var $MOCK_NAME$ = mocks.CreateMock&lt;$MOCK_TYPE$&gt;();&#xD;&#xA;&#xD;&#xA;using (mocks.Record())&#xD;&#xA;{&#xD;&#xA;	// set expectations&#xD;&#xA;	$END$&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;using (mocks.Playback())&#xD;&#xA;{&#xD;&#xA;	// act&#xD;&#xA;	// assert&#xD;&#xA;	// remember that expectations are evaluated on playback dispose&#xD;&#xA;}" reformat="True" shortenQualifiedReferences="True">
     <Context>
       <CSharpContext context="Everywhere" minimumLanguageVersion="2.0" />
     </Context>

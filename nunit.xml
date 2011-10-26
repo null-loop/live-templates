@@ -1,15 +1,4 @@
 <TemplatesExport>
-  <Template uid="d05db788-6d73-4cdc-9c77-02e469ea4b3c" shortcut="nunit-test-source" description="" text="[Test]&#xD;&#xA;[TestCaseSource(&quot;$TEST$_TestCases&quot;)]&#xD;&#xA;public void $TEST$($TESTARGS$)&#xD;&#xA;{&#xD;&#xA;	$END$&#xD;&#xA;	throw new NotImplementedException(&quot;This test has not been implemented.&quot;);&#xD;&#xA;	// arrange&#xD;&#xA;	// act&#xD;&#xA;	// assert&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;// tests cases for &#xD;&#xA;private static IEnumerable&lt;object[]&gt; $TEST$_TestCases()&#xD;&#xA;{&#xD;&#xA;	yield return new object[] { };&#xD;&#xA;}" reformat="True" shortenQualifiedReferences="True">
-    <Context>
-      <CSharpContext context="Everywhere" minimumLanguageVersion="2.0" />
-    </Context>
-    <Categories />
-    <Variables>
-      <Variable name="TEST" expression="" initialRange="0" />
-      <Variable name="TESTARGS" expression="" initialRange="0" />
-    </Variables>
-    <CustomProperties />
-  </Template>
   <Template uid="ce600b73-4e8f-4d2a-89f9-24b6593df34b" shortcut="nunit-test" description="" text="[Test]&#xD;&#xA;public void $TEST$()&#xD;&#xA;{&#xD;&#xA;	$END$&#xD;&#xA;	throw new NotImplementedException(&quot;This test has not been implemented by.&quot;);&#xD;&#xA;	// arrange&#xD;&#xA;	// act&#xD;&#xA;	// assert&#xD;&#xA;}" reformat="True" shortenQualifiedReferences="True">
     <Context>
       <CSharpContext context="Everywhere" minimumLanguageVersion="2.0" />
@@ -29,6 +18,17 @@
       <Variable name="NAMESPACE" expression="fileDefaultNamespace()" initialRange="-1" />
       <Variable name="TEST_FIXTURE_NAME" expression="" initialRange="0" />
       <Variable name="FIRST_TEST_NAME" expression="" initialRange="0" />
+    </Variables>
+    <CustomProperties />
+  </Template>
+  <Template uid="d05db788-6d73-4cdc-9c77-02e469ea4b3c" shortcut="nunit-test-source" description="" text="[Test,&#xD;&#xA;TestCaseSource(&quot;$TEST$_TestCases&quot;)]&#xD;&#xA;public void $TEST$($TESTARGS$)&#xD;&#xA;{&#xD;&#xA;	$END$&#xD;&#xA;	throw new NotImplementedException(&quot;This test has not been implemented.&quot;);&#xD;&#xA;	// arrange&#xD;&#xA;	// act&#xD;&#xA;	// assert&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;// tests cases for &#xD;&#xA;private static IEnumerable&lt;object[]&gt; $TEST$_TestCases()&#xD;&#xA;{&#xD;&#xA;	yield return new object[] { };&#xD;&#xA;}" reformat="True" shortenQualifiedReferences="True">
+    <Context>
+      <CSharpContext context="Everywhere" minimumLanguageVersion="2.0" />
+    </Context>
+    <Categories />
+    <Variables>
+      <Variable name="TEST" expression="" initialRange="0" />
+      <Variable name="TESTARGS" expression="" initialRange="0" />
     </Variables>
     <CustomProperties />
   </Template>
