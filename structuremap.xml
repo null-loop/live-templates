@@ -1,0 +1,44 @@
+<TemplatesExport family="Live Templates">
+  <Template uid="1b03d321-4dc2-4402-9f6b-9e35f5142522" shortcut="structuremap-for-singleton-use" description="" text="For&lt;$ABSTRACT_TYPE$&gt;().Singleton().Use&lt;$CONCRETE_TYPE$&gt;();" reformat="True" shortenQualifiedReferences="True">
+    <Categories />
+    <Variables>
+      <Variable name="ABSTRACT_TYPE" expression="" initialRange="0" />
+      <Variable name="CONCRETE_TYPE" expression="" initialRange="0" />
+    </Variables>
+    <CustomProperties />
+  </Template>
+  <Template uid="b3c1469e-0db3-43eb-971a-f6b02f089783" shortcut="structuremap-for-use" description="" text="For&lt;$ABSTRACT_TYPE$&gt;().Use&lt;$CONCRETE_TYPE$&gt;();" reformat="True" shortenQualifiedReferences="True">
+    <Categories />
+    <Variables>
+      <Variable name="ABSTRACT_TYPE" expression="complete()" initialRange="0" />
+      <Variable name="CONCRETE_TYPE" expression="complete()" initialRange="0" />
+    </Variables>
+    <CustomProperties />
+  </Template>
+  <Template uid="a242b24f-af5f-4bd2-8738-53206135fabe" shortcut="structuremap-for-use-instance" description="" text="For&lt;$ABSTRACT_TYPE$&gt;().Use($INSTANCE_VAR$);" reformat="True" shortenQualifiedReferences="True">
+    <Categories />
+    <Variables>
+      <Variable name="ABSTRACT_TYPE" expression="" initialRange="0" />
+      <Variable name="INSTANCE_VAR" expression="complete()" initialRange="0" />
+    </Variables>
+    <CustomProperties />
+  </Template>
+  <Template uid="1f3d1d5d-e13d-4ef5-ad34-37ccd7869b8c" shortcut="structuremap-for-use-named" description="" text="For&lt;$ABSTRACT_TYPE$&gt;().Use&lt;$CONCRETE_TYPE$&gt;().Named(&quot;$NAME$&quot;);" reformat="True" shortenQualifiedReferences="True">
+    <Categories />
+    <Variables>
+      <Variable name="ABSTRACT_TYPE" expression="" initialRange="0" />
+      <Variable name="CONCRETE_TYPE" expression="" initialRange="0" />
+      <Variable name="NAME" expression="" initialRange="0" />
+    </Variables>
+    <CustomProperties />
+  </Template>
+  <Template uid="ac04ec32-6da1-4c03-a380-e26dc1ffdfb9" shortcut="structuremap-registry" description="" text="public class $REGISTRY_NAME$Registry : StructureMap.Configuration.DSL.Registry&#xD;&#xA;{&#xD;&#xA;	public $REGISTRY_NAME$Registry()&#xD;&#xA;	{&#xD;&#xA;		For&lt;$ABSTRACT_TYPE$&gt;().Use&lt;$CONCRETE_TYPE$&gt;();&#xD;&#xA;		$END$&#xD;&#xA;	}&#xD;&#xA;}" reformat="True" shortenQualifiedReferences="True">
+    <Categories />
+    <Variables>
+      <Variable name="REGISTRY_NAME" expression="" initialRange="0" />
+      <Variable name="ABSTRACT_TYPE" expression="complete()" initialRange="0" />
+      <Variable name="CONCRETE_TYPE" expression="complete()" initialRange="0" />
+    </Variables>
+    <CustomProperties />
+  </Template>
+</TemplatesExport>
