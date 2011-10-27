@@ -56,4 +56,25 @@
     </Variables>
     <CustomProperties />
   </Template>
+  <Template uid="ce4ad6f3-b8b7-4d4c-b497-6868a932335b" shortcut="sm-container-multiple-registrys" description="" text="var container = new StructureMap.Container(&#xD;&#xA;    c =&gt; &#xD;&#xA;        {&#xD;&#xA;            c.AddRegistry&lt;$REGISTRY_TYPE_ONE$&gt;();&#xD;&#xA;            c.AddRegistry&lt;$REGISTRY_TYPE_TWO$&gt;();&#xD;&#xA;        });" reformat="True" shortenQualifiedReferences="True">
+    <Context>
+      <CSharpContext context="Everywhere" minimumLanguageVersion="2.0" />
+    </Context>
+    <Categories />
+    <Variables>
+      <Variable name="REGISTRY_TYPE_ONE" expression="" initialRange="0" />
+      <Variable name="REGISTRY_TYPE_TWO" expression="" initialRange="0" />
+    </Variables>
+    <CustomProperties />
+  </Template>
+  <Template uid="bf109989-db0c-4e0a-9896-577b00128c78" shortcut="sm-container-single-registry" description="" text="var container = new StructureMap.Container(new $REGISTRY_TYPE$());" reformat="True" shortenQualifiedReferences="True">
+    <Context>
+      <CSharpContext context="Everywhere" minimumLanguageVersion="2.0" />
+    </Context>
+    <Categories />
+    <Variables>
+      <Variable name="REGISTRY_TYPE" expression="complete()" initialRange="0" />
+    </Variables>
+    <CustomProperties />
+  </Template>
 </TemplatesExport>

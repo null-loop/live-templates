@@ -21,7 +21,7 @@
     </Variables>
     <CustomProperties />
   </Template>
-  <Template uid="d05db788-6d73-4cdc-9c77-02e469ea4b3c" shortcut="nunit-test-source" description="" text="[Test,&#xD;&#xA;TestCaseSource(&quot;$TEST$_TestCases&quot;)]&#xD;&#xA;public void $TEST$($TESTARGS$)&#xD;&#xA;{&#xD;&#xA;	$END$&#xD;&#xA;	throw new NotImplementedException(&quot;This test has not been implemented.&quot;);&#xD;&#xA;	// arrange&#xD;&#xA;	// act&#xD;&#xA;	// assert&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;// tests cases for &#xD;&#xA;private static IEnumerable&lt;object[]&gt; $TEST$_TestCases()&#xD;&#xA;{&#xD;&#xA;	yield return new object[] { };&#xD;&#xA;}" reformat="True" shortenQualifiedReferences="True">
+  <Template uid="d05db788-6d73-4cdc-9c77-02e469ea4b3c" shortcut="nunit-test-source" description="" text="[Test,&#xD;&#xA;TestCaseSource(&quot;$TEST$_TestCases&quot;)]&#xD;&#xA;public void $TEST$($TESTARGS$)&#xD;&#xA;{&#xD;&#xA;	$END$&#xD;&#xA;	throw new NotImplementedException(&quot;This test has not been implemented.&quot;);&#xD;&#xA;	// arrange&#xD;&#xA;	// act&#xD;&#xA;	// assert&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;// tests cases for &#xD;&#xA;private static System.Collections.Generic.IEnumerable&lt;object[]&gt; $TEST$_TestCases()&#xD;&#xA;{&#xD;&#xA;	yield return new object[] { };&#xD;&#xA;}" reformat="True" shortenQualifiedReferences="True">
     <Context>
       <CSharpContext context="Everywhere" minimumLanguageVersion="2.0" />
     </Context>
