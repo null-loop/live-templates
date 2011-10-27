@@ -1,2 +1,14 @@
 <TemplatesExport>
+  <Template uid="8afcf407-35f3-459d-ab59-3746cc4ba4c0" shortcut="caliburn-property-notify" description="Requires you to be inheriting from PropertyChangedBase" text="private $PROPERTY_TYPE$ _$BACKING_FIELD_NAME$;&#xD;&#xA;&#xD;&#xA;public $PROPERTY_TYPE$ $PROPERTY_NAME$&#xD;&#xA;{&#xD;&#xA;	get { return _$BACKING_FIELD_NAME$; }&#xD;&#xA;	set&#xD;&#xA;	{&#xD;&#xA;		if (EqualityComparer&lt;$PROPERTY_TYPE$&gt;.Default.Equals(_$BACKING_FIELD_NAME$, value)) return;&#xD;&#xA;&#xD;&#xA;		_$BACKING_FIELD_NAME$ = value;&#xD;&#xA;		NotifyOfPropertyChange(()=&gt;$PROPERTY_NAME$);&#xD;&#xA;	}&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;$END$" reformat="True" shortenQualifiedReferences="True">
+    <Context>
+      <CSharpContext context="Everywhere" minimumLanguageVersion="2.0" />
+    </Context>
+    <Categories />
+    <Variables>
+      <Variable name="PROPERTY_TYPE" expression="" initialRange="1" />
+      <Variable name="PROPERTY_NAME" expression="" initialRange="0" />
+      <Variable name="BACKING_FIELD_NAME" expression="decapitalize(PROPERTY_NAME)" initialRange="-1" />
+    </Variables>
+    <CustomProperties />
+  </Template>
 </TemplatesExport>

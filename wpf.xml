@@ -1,2 +1,14 @@
 <TemplatesExport>
+  <Template uid="2f560ccd-8293-46ed-a0c2-937e8154221d" shortcut="dependency-property" description="" text="public static readonly DependencyProperty $PropertyName$Property = &#xD;&#xA;    DependencyProperty.Register(&quot;$PropertyName$&quot;, typeof($PropertyType$), typeof($PropertyOwner$));&#xD;&#xA;&#xD;&#xA;public $PropertyType$ $PropertyName$ {&#xD;&#xA;    get { return ($PropertyType$) GetValue($PropertyName$Property); }&#xD;&#xA;    set { SetValue($PropertyName$Property, value); }&#xD;&#xA;}" reformat="True" shortenQualifiedReferences="True">
+    <Context>
+      <CSharpContext context="Everywhere" minimumLanguageVersion="2.0" />
+    </Context>
+    <Categories />
+    <Variables>
+      <Variable name="PropertyName" expression="" initialRange="0" />
+      <Variable name="PropertyType" expression="" initialRange="0" />
+      <Variable name="PropertyOwner" expression="" initialRange="0" />
+    </Variables>
+    <CustomProperties />
+  </Template>
 </TemplatesExport>
