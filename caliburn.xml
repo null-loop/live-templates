@@ -1,5 +1,15 @@
 <TemplatesExport>
-  <Template uid="8afcf407-35f3-459d-ab59-3746cc4ba4c0" shortcut="caliburn-property-notify" description="Requires you to be inheriting from PropertyChangedBase" text="private $PROPERTY_TYPE$ _$BACKING_FIELD_NAME$;&#xD;&#xA;&#xD;&#xA;public $PROPERTY_TYPE$ $PROPERTY_NAME$&#xD;&#xA;{&#xD;&#xA;	get { return _$BACKING_FIELD_NAME$; }&#xD;&#xA;	set&#xD;&#xA;	{&#xD;&#xA;		if (EqualityComparer&lt;$PROPERTY_TYPE$&gt;.Default.Equals(_$BACKING_FIELD_NAME$, value)) return;&#xD;&#xA;&#xD;&#xA;		_$BACKING_FIELD_NAME$ = value;&#xD;&#xA;		NotifyOfPropertyChange(()=&gt;$PROPERTY_NAME$);&#xD;&#xA;	}&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;$END$" reformat="True" shortenQualifiedReferences="True">
+  <Template uid="5e295909-51c0-4032-9e6a-ab9576c1fe30" shortcut="caliburn-property-changed-base" description="" text="public class $TYPE$ : Caliburn.Micro.PropertyChangedBase&#xD;&#xA;{&#xD;&#xA;&#xD;&#xA;}" reformat="True" shortenQualifiedReferences="True">
+    <Context>
+      <CSharpContext context="Everywhere" minimumLanguageVersion="2.0" />
+    </Context>
+    <Categories />
+    <Variables>
+      <Variable name="TYPE" expression="" initialRange="0" />
+    </Variables>
+    <CustomProperties />
+  </Template>
+  <Template uid="8afcf407-35f3-459d-ab59-3746cc4ba4c0" shortcut="caliburn-property-change" description="Requires you to be inheriting from PropertyChangedBase" text="private $PROPERTY_TYPE$ _$BACKING_FIELD_NAME$;&#xD;&#xA;&#xD;&#xA;public $PROPERTY_TYPE$ $PROPERTY_NAME$&#xD;&#xA;{&#xD;&#xA;	get { return _$BACKING_FIELD_NAME$; }&#xD;&#xA;	set&#xD;&#xA;	{&#xD;&#xA;		if (EqualityComparer&lt;$PROPERTY_TYPE$&gt;.Default.Equals(_$BACKING_FIELD_NAME$, value)) return;&#xD;&#xA;&#xD;&#xA;		_$BACKING_FIELD_NAME$ = value;&#xD;&#xA;		NotifyOfPropertyChange(()=&gt;$PROPERTY_NAME$);&#xD;&#xA;	}&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;$END$" reformat="True" shortenQualifiedReferences="True">
     <Context>
       <CSharpContext context="Everywhere" minimumLanguageVersion="2.0" />
     </Context>
